@@ -41,7 +41,7 @@
 
 <h1>True Velocity — Privacy Policy</h1>
 
-<p><strong>Last updated:</strong> February 2026</p>
+<p><strong>Last updated:</strong> May 2026</p>
 
 <p>
     True Velocity ("the App") is developed by <strong>David Picknell</strong>.
@@ -49,23 +49,47 @@
 </p>
 
 <div class="note">
-    <strong>Privacy first:</strong> True Velocity does not collect, store, track, or transmit your personal data.
-    GPS is used only to calculate real-time speed on your device.
+    <strong>Privacy first:</strong> True Velocity does not collect, transmit, or share your personal data.
+    GPS is used on-device to calculate real-time speed, and — only when you explicitly start a trip recording —
+    to log a summary of that trip locally on your iPhone. Your location and trip data never leave your device.
 </div>
 
 <h2>Location Data</h2>
 
 <p>
-    True Velocity uses your device’s GPS (Core Location) to calculate your current speed.
+    True Velocity uses your device’s GPS (Core Location) for two purposes:
 </p>
 
-<p>
-    Location data is processed in real time on your device and is <strong>not stored</strong>,
-    <strong>not transmitted</strong>, and <strong>not shared</strong>.
-</p>
+<ol>
+    <li><strong>Real-time speed display.</strong> GPS samples are processed on-device to drive the analogue dial and digital readout.
+        These samples are not stored or transmitted.</li>
+    <li><strong>Trip recording (optional, user-initiated).</strong> When you tap <strong>Record</strong> on the main screen, the App
+        uses GPS samples to calculate your trip’s duration, distance, average speed, and top speed. Tapping <strong>Stop</strong> ends the trip.</li>
+</ol>
 
 <p>
-    The App does not record route history, travel logs, or background location data.
+    Location data — including raw GPS coordinates and route paths — is <strong>never stored</strong>, <strong>never transmitted</strong>,
+    and <strong>never shared</strong>. The App does not retain your route, your coordinates, or any map history.
+    Only the resulting trip summary (duration, distance, average speed, top speed, start/end times, and a default trip title)
+    is saved locally on your device.
+</p>
+
+<h2>Background Location</h2>
+
+<p>
+    True Velocity is permitted to use location in the background <strong>only</strong> while you have explicitly started a trip recording.
+    This allows the trip to remain accurate if your screen locks or you switch apps during the recording.
+    The moment you tap <strong>Stop</strong>, background location updates are disabled.
+    The App never accesses your location in the background outside of an in-progress trip you started yourself.
+</p>
+
+<h2>Trip Storage</h2>
+
+<p>
+    Trip summaries are stored only on your iPhone, in the App’s local database.
+    Trips are <strong>not</strong> synced to iCloud, are <strong>not</strong> uploaded to any server, and are <strong>not</strong>
+    accessible to the developer or any third party. If you delete the App, your trip history is removed with it.
+    You can also delete individual trips at any time from the Trips list inside the App.
 </p>
 
 <h2>Data Collection</h2>
@@ -79,15 +103,15 @@
 <h2>Local Processing</h2>
 
 <p>
-    All speed calculations and filtering (including adaptive filtering)
+    All speed calculations, filtering (including adaptive filtering), and trip statistics
     are performed locally on your device.
 </p>
 
 <p>
-    No external servers are used.
+    No external servers are used for any feature of the App.
 </p>
 
-<h2>Analytics & Tracking</h2>
+<h2>Analytics &amp; Tracking</h2>
 
 <p>
     True Velocity does <strong>not</strong> use analytics services,
@@ -98,7 +122,7 @@
     No behavioural data, crash analytics, or usage statistics are collected.
 </p>
 
-<h2>In-App Purchase</h2>
+<h2>In-App Purchase &amp; iCloud</h2>
 
 <p>
     True Velocity includes a seven-day trial period.
@@ -111,7 +135,15 @@
 </p>
 
 <p>
-    Apple’s handling of payment information is governed by
+    To allow your purchase and trial status to follow you across your own devices, the App stores a small
+    purchase-status record (whether you have unlocked the App, and the start time of your trial)
+    in your <strong>private iCloud database</strong> using Apple’s CloudKit. This record is accessible only to you,
+    on devices signed in to your own Apple ID, and contains no location data, no trip data, and no personal information.
+    The developer cannot access this record.
+</p>
+
+<p>
+    Apple’s handling of payment and iCloud data is governed by
     <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.
 </p>
 
