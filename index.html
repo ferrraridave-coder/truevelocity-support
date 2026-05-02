@@ -52,7 +52,7 @@
 
 <p>
     If you need help with True Velocity — including GPS accuracy, unit settings,
-    speed response modes, adaptive filtering, or purchase issues — please contact support at:<br>
+    speed response modes, adaptive filtering, trip recording, or purchase issues — please contact support at:<br>
     <strong>Email:</strong> <a href="mailto:ferrraridave@icloud.com">ferrraridave@icloud.com</a>
 </p>
 
@@ -63,8 +63,9 @@
 </div>
 
 <div class="note">
-    <strong>Quick privacy summary:</strong> True Velocity does not collect, store, or transmit your location data.
-    GPS is used only to calculate your real-time speed on your device.
+    <strong>Quick privacy summary:</strong> True Velocity does not transmit or share your location.
+    GPS is used on-device to calculate your real-time speed, and — only when you explicitly start a trip recording —
+    to log that trip locally on your iPhone. Trip data never leaves your device.
 </div>
 
 <h2>Frequently Asked Questions</h2>
@@ -72,14 +73,16 @@
 <h3>What is True Velocity?</h3>
 <p>
     True Velocity is a precision GPS speedometer for iPhone. It displays both an analogue dial
-    and a large digital speed readout in real time using your device’s built-in GPS.
+    and a large digital speed readout in real time using your device’s built-in GPS,
+    and lets you optionally record trips with duration, distance, and top/average speed — all stored privately on your device.
 </p>
 
 <h3>Does the app track or store my location?</h3>
 <p>
-    No. True Velocity uses your device’s GPS solely to calculate your current speed.
-    Location data is processed on your device and is not stored, transmitted, or shared.
-    The app does not create route history or movement logs.
+    The live speedometer uses GPS solely to calculate your current speed and does not store or transmit location data.
+    When you explicitly start a trip recording, the app logs that trip locally on your iPhone so you can review it afterwards
+    (duration, distance, top speed, average speed). Trip data is stored only on your device and is never uploaded, transmitted, or shared.
+    The app does not create background route history outside of an active trip recording.
 </p>
 
 <h3>Why does the app show GPS accuracy in metres?</h3>
@@ -115,6 +118,54 @@
     helping to reduce jitter while maintaining responsiveness.
 </p>
 
+<h3>How do I record a trip?</h3>
+<p>
+    Tap the <strong>Record</strong> button on the main speedometer screen to start a trip.
+    A recording HUD appears showing elapsed time and distance. Tap <strong>Stop</strong> to end the trip;
+    it will then be saved to your Trips list with duration, distance, top speed, and average speed.
+    You can start and stop trips as often as you like.
+</p>
+
+<h3>Can the app record a trip while it’s in the background or my screen is locked?</h3>
+<p>
+    Yes. Once you have explicitly started a trip from the main screen, True Velocity continues to log GPS in the background
+    so the trip remains accurate if your screen locks or you switch apps.
+    Background location is <strong>only</strong> active during an in-progress trip — the moment you tap <strong>Stop</strong>,
+    background location updates are disabled. The app never logs your location in the background outside of a trip you started.
+</p>
+
+<h3>Where are my trips stored? Are they uploaded anywhere?</h3>
+<p>
+    Trips are stored locally on your iPhone only. They are not uploaded to iCloud, the developer, or any third party.
+    If you delete the app, your trip history is removed with it.
+</p>
+
+<h3>Why are some short trips not saved?</h3>
+<p>
+    To avoid cluttering your trip list with accidental taps or stationary recordings,
+    trips shorter than 30 seconds or under 100 metres are automatically discarded when you stop recording.
+</p>
+
+<h3>How is trip distance calculated?</h3>
+<p>
+    True Velocity calculates distance by integrating your GPS-reported speed over time, rather than summing positional jumps.
+    Because GPS speed is derived from the Doppler shift of satellite signals, this approach is far more stable than coordinate-based distance
+    and is much less affected by GPS jitter when stationary or in poor signal areas.
+</p>
+
+<h3>What happens if the app is force-closed during a trip?</h3>
+<p>
+    Trip progress is saved every two seconds while recording, so if the app is force-closed or terminated by the system mid-trip,
+    the trip is automatically finalised and saved the next time you launch the app
+    (provided it meets the minimum duration and distance thresholds).
+</p>
+
+<h3>How do I delete a trip?</h3>
+<p>
+    Open the Trips list, swipe left on a trip, and tap <strong>Delete</strong>.
+    Deletion is permanent and cannot be undone.
+</p>
+
 <h3>Is an account required?</h3>
 <p>
     No account is required. True Velocity works entirely on your device.
@@ -122,7 +173,7 @@
 
 <h3>Does the app work offline?</h3>
 <p>
-    Yes. True Velocity does not require an internet connection.
+    Yes. True Velocity does not require an internet connection for the speedometer or trip recording.
     However, GPS signal quality may be affected by indoor environments or signal obstruction.
 </p>
 
