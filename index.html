@@ -51,8 +51,7 @@
 <h1>True Velocity — Support</h1>
 
 <p>
-    If you need help with True Velocity — including GPS accuracy, unit settings,
-    speed response modes, adaptive filtering, trip recording, or purchase issues — please contact support at:<br>
+    If you need help with True Velocity — including GPS accuracy, unit settings, trip recording, or purchase issues — please contact support at:<br>
     <strong>Email:</strong> <a href="mailto:ferrraridave@icloud.com">ferrraridave@icloud.com</a>
 </p>
 
@@ -64,8 +63,8 @@
 
 <div class="note">
     <strong>Quick privacy summary:</strong> True Velocity does not transmit or share your location.
-    GPS is used on-device to calculate your real-time speed, and — only when you explicitly start a trip recording —
-    to log that trip locally on your iPhone. Trip data never leaves your device.
+    GPS is used on-device to calculate your real-time speed, and — only when you have enabled Log Trips and explicitly started a trip recording —
+    to log a summary of that trip locally on your iPhone. Trip data never leaves your device.
 </div>
 
 <h2>Frequently Asked Questions</h2>
@@ -74,15 +73,15 @@
 <p>
     True Velocity is a precision GPS speedometer for iPhone. It displays both an analogue dial
     and a large digital speed readout in real time using your device’s built-in GPS,
-    and lets you optionally record trips with duration, distance, and top/average speed — all stored privately on your device.
+    and lets you optionally record trips with duration, distance, top speed and average speed — all stored privately on your device.
 </p>
 
 <h3>Does the app track or store my location?</h3>
 <p>
     The live speedometer uses GPS solely to calculate your current speed and does not store or transmit location data.
-    When you explicitly start a trip recording, the app logs that trip locally on your iPhone so you can review it afterwards
-    (duration, distance, top speed, average speed). Trip data is stored only on your device and is never uploaded, transmitted, or shared.
-    The app does not create background route history outside of an active trip recording.
+    If you enable trip recording and start a trip, the app saves a summary of that trip locally on your iPhone
+    (duration, distance, top speed and average speed). Trip data is stored only on your device and is never uploaded, transmitted, or shared.
+    The app does not record routes, coordinates, or background location outside of an active trip recording.
 </p>
 
 <h3>Why does the app show GPS accuracy in metres?</h3>
@@ -100,29 +99,26 @@
 
 <h3>How do I change between MPH and KMH?</h3>
 <p>
-    Tap the settings button in the bottom-right corner of the screen.
-    Under <strong>Units</strong>, select either MPH or KMH.
+    Tap the gear icon in the bottom-right corner of the main screen, choose <strong>Settings</strong>,
+    and use the MPH / KMH selector under <strong>Units</strong>.
 </p>
 
-<h3>What is Speed Response?</h3>
+<h3>How do I open the Trips list?</h3>
 <p>
-    Speed Response adjusts how quickly the dial reacts to speed changes.
-    <strong>Smooth</strong> provides more filtering,
-    <strong>Balanced</strong> offers a middle ground,
-    and <strong>Fast</strong> prioritises responsiveness.
+    Tap the gear icon in the bottom-right corner of the main screen and choose <strong>Trips</strong>.
 </p>
 
-<h3>What is Adaptive Filtering?</h3>
+<h3>How do I enable trip recording?</h3>
 <p>
-    Adaptive Filtering dynamically adjusts smoothing based on signal quality and movement,
-    helping to reduce jitter while maintaining responsiveness.
+    Open the Trips screen (gear icon → <strong>Trips</strong>) and turn on the <strong>Log Trips</strong> toggle at the top.
+    Because trip recording must continue accurately if your screen locks, iOS will ask for <strong>Always Allow</strong> location access —
+    grant this for trip recording to work. Once Log Trips is on, a red record button appears on the main speedometer screen.
 </p>
 
 <h3>How do I record a trip?</h3>
 <p>
-    Tap the <strong>Record</strong> button on the main speedometer screen to start a trip.
-    A recording HUD appears showing elapsed time and distance. Tap <strong>Stop</strong> to end the trip;
-    it will then be saved to your Trips list with duration, distance, top speed, and average speed.
+    With Log Trips enabled, tap the red record button on the main screen to start. Tap it again to stop.
+    The trip is then saved to your Trips list with duration, distance, top speed and average speed.
     You can start and stop trips as often as you like.
 </p>
 
@@ -130,7 +126,7 @@
 <p>
     Yes. Once you have explicitly started a trip from the main screen, True Velocity continues to log GPS in the background
     so the trip remains accurate if your screen locks or you switch apps.
-    Background location is <strong>only</strong> active during an in-progress trip — the moment you tap <strong>Stop</strong>,
+    Background location is <strong>only</strong> active during an in-progress trip — the moment you tap stop,
     background location updates are disabled. The app never logs your location in the background outside of a trip you started.
 </p>
 
@@ -160,9 +156,9 @@
     (provided it meets the minimum duration and distance thresholds).
 </p>
 
-<h3>How do I delete a trip?</h3>
+<h3>How do I rename or delete a trip?</h3>
 <p>
-    Open the Trips list, swipe left on a trip, and tap <strong>Delete</strong>.
+    In the Trips list, swipe left on a trip to reveal <strong>Rename</strong> and <strong>Delete</strong> options.
     Deletion is permanent and cannot be undone.
 </p>
 
