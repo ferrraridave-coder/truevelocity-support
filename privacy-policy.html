@@ -51,27 +51,31 @@
 <div class="note">
     <strong>Privacy first:</strong> True Velocity does not collect, transmit, or share your personal data.
     GPS is used on-device to calculate real-time speed, and — only when you explicitly start a trip recording —
-    to log a summary of that trip locally on your iPhone. Your location and trip data never leave your device.
+    to log a summary of that trip locally on your iPhone. If you enable Map Visualization, the GPS route coordinates
+    for that trip are also saved locally on your device only. Your location and trip data never leave your device.
 </div>
 
 <h2>Location Data</h2>
 
 <p>
-    True Velocity uses your device’s GPS (Core Location) for two purposes:
+    True Velocity uses your device's GPS (Core Location) for the following purposes:
 </p>
 
 <ol>
     <li><strong>Real-time speed display.</strong> GPS samples are processed on-device to drive the analogue dial and digital readout.
         These samples are not stored or transmitted.</li>
     <li><strong>Trip recording (optional, user-initiated).</strong> When you tap the record button on the main screen, the App
-        uses GPS samples to calculate your trip’s duration, distance, average speed, and top speed. Tapping the button again ends the trip.</li>
+        uses GPS samples to calculate your trip's duration, distance, average speed, and top speed. Tapping the button again ends the trip.
+        Only the resulting trip summary is saved locally on your device.</li>
+    <li><strong>Map Visualization (optional, user-enabled).</strong> If you enable Map Visualization in the Trips settings,
+        the GPS coordinates of your route are additionally saved locally on your device so the trip can be displayed on a map.
+        This feature is off by default. Route coordinates are stored only on your device, are never transmitted, and are never shared.</li>
 </ol>
 
 <p>
-    Location data — including raw GPS coordinates and route paths — is <strong>never stored</strong>, <strong>never transmitted</strong>,
-    and <strong>never shared</strong>. The App does not retain your route, your coordinates, or any map history.
-    Only the resulting trip summary (duration, distance, average speed, top speed, start/end times, and a default trip title)
-    is saved locally on your device.
+    Location data is <strong>never transmitted</strong> and <strong>never shared</strong>.
+    When Map Visualization is disabled (the default), raw GPS coordinates and route paths are not stored.
+    When Map Visualization is enabled, route coordinates are saved locally on your device only as part of the trip record.
 </p>
 
 <h2>Background Location</h2>
@@ -86,7 +90,8 @@
 <h2>Trip Storage</h2>
 
 <p>
-    Trip summaries are stored only on your iPhone, in the App’s local database.
+    Trip summaries are stored only on your iPhone, in the App's local database.
+    If Map Visualization is enabled, GPS route coordinates are also stored locally as part of each trip record.
     Trips are <strong>not</strong> synced to iCloud, are <strong>not</strong> uploaded to any server, and are <strong>not</strong>
     accessible to the developer or any third party. If you delete the App, your trip history is removed with it.
     You can also delete individual trips at any time from the Trips list inside the App.
@@ -129,24 +134,24 @@
 </p>
 
 <p>
-    All payments are processed securely by Apple through Apple’s In-App Purchase system.
+    All payments are processed securely by Apple through Apple's In-App Purchase system.
     The developer does not receive or store your payment information.
 </p>
 
 <p>
     To allow your purchase and trial status to follow you across your own devices, the App stores a small
     purchase-status record (whether you have unlocked the App, and the start time of your trial)
-    in your <strong>private iCloud database</strong> using Apple’s CloudKit. This record is accessible only to you,
+    in your <strong>private iCloud database</strong> using Apple's CloudKit. This record is accessible only to you,
     on devices signed in to your own Apple ID, and contains no location data, no trip data, and no personal information.
     The developer cannot access this record.
 </p>
 
 <p>
-    Apple’s handling of payment and iCloud data is governed by
-    <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.
+    Apple's handling of payment and iCloud data is governed by
+    <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.
 </p>
 
-<h2>Children’s Privacy</h2>
+<h2>Children's Privacy</h2>
 
 <p>
     The App does not knowingly collect personal information from children.
